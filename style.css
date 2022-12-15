@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.384);
+    height: 40px;
+  }
+
+body{
+    
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a121c;
+    overflow-x: hidden;
+    color: #fff;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header > img{
+    width: 8rem;
+    margin-top:2rem;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+header > h3{
+    margin-top: .7rem;
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 0rem;
+    
+}
+
+header > span{
+    background-color: indigo;
+    color: white;
+    padding: .6rem 1rem;
+    border-radius: .5rem;
+    margin-top: .5rem;
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.browser{
+    padding: 1rem;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    width: 60%;
+    height: 30rem;
+    margin-bottom: 8rem;
+}
+
+.browser h2{
+    font-weight: bold;
+}
+
+.browser > .tab {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #393737;
+    padding: .5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.browser > img {
+    width: 100%;
+    height: 85%;
+}
+
+.browser iframe{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/loader4.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.widget{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.message{
+    position:absolute;
+    right: 10px;
+    padding: .5rem;
+    background-color: green;
+    top: 1.4rem;
+    border-radius: 10px;
+    animation-name: message;
+    transition: 1s;
+    animation-duration: .5s;
+}
+
+
+@keyframes message {
+    0%{
+        right: -500px;
+    }
+    100%{
+        right: 10px;
+        }
+}
+
+@media only screen and (max-width: 750px) {
+
+.browser{
+    width: 100%;
+    padding: .7rem;
+}
+iframe{
+    width: 95vw;
+    width: 100%;
+}
+}
+
+
+
